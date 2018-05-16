@@ -16,13 +16,10 @@ a, a::after, a::before {
   border: 0;
 }
 
-div {
-  margin
-}
 
 h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ffffff;
   margin: 0;
 }
@@ -38,6 +35,24 @@ h2 {
 p {
     line-height: 1.7;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button a {
+  border: 2px solid #fff;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 10px 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* GLOBAL MODIFIERS */
+.center { text-align: center; }
 
 
 /* PUSH MENU */
@@ -114,9 +129,9 @@ button:focus {
 }
 
 button#menu-toggle span {
-  font-size: 1.65rem;
+  font-size: 1.75rem;
   position: relative;
-  top: -2px;
+  top: -1px;
   margin-left: 45px;
   margin-right: 15px;
   color: #fff;
@@ -133,7 +148,7 @@ button#menu-toggle span {
     -webkit-border-radius: 7px;
        -moz-border-radius: 7px;
             border-radius: 7px;
-    background: rgba(0,0,0,.85);
+    background: rgba(47,49,54,.5);
 }
 #menu-toggle:before,
 #menu-toggle:after {
@@ -145,7 +160,6 @@ button#menu-toggle span {
        -moz-transition: all .5s ease;
          -o-transition: all .5s ease;
             transition: all .5s ease;
-
     background-color: #fff;
 }
 
@@ -168,4 +182,54 @@ body.open button#menu-toggle:after {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
+}
+
+
+/* CLIENT PATH */
+section#clientpath {
+  width: 100%;
+  background-color: #5d657a;
+  margin-top: 130px;
+  text-align: center;
+  color: #fff;
+}
+
+section#clientpath h4 {
+  padding-top: 30px;
+  width: 320px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+}
+
+section#clientpath .clientpath_button {
+  padding-bottom: 30px;
+}
+
+section#clientpath .clientpath_button a {
+  display: inline-block;
+
+}
+
+
+
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: #5d657a;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer h6 {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  color: #fff;
+  padding: 0 10px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+footer h6:last-of-type {
+  border-right: none;
 }
