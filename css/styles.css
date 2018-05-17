@@ -1,4 +1,6 @@
-/* GLOBAL */
+
+
+/********* GLOBAL *********/
 
 body {
   margin: 0;
@@ -51,11 +53,14 @@ a {
 }
 
 
-/* GLOBAL MODIFIERS */
+/********* GLOBAL MODIFIERS *********/
 .center { text-align: center; }
 
 
-/* PUSH MENU */
+
+
+
+/********* PUSH MENU *********/
 #menu {
     position: fixed;
     top: 0;
@@ -68,7 +73,7 @@ a {
          -o-transition: all .3s ease-in;
             transition: all .3s ease-in;
     text-align: center;
-    background-color: rgba(0,0,0,.85);
+    background-color: rgba(0,0,0,.5);
 }
 #menu .brand {
     height: 51px;
@@ -104,24 +109,14 @@ a {
 body.open #menu {
     left: 0;
 }
-/* MAIN PAGE */
-.page-wrap {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
 
-    -webkit-transition: all .3s ease-in;
-       -moz-transition: all .3s ease-in;
-         -o-transition: all .3s ease-in;
-            transition: all .3s ease-in;
-}
 
 /* MENU TOGGLE ICON */
 
 button#menu-toggle {
   text-align: right;
   padding: 0;
-  border: 2px solid #fff;
+  border: 2px solid rgba(0,0,0,0);
 }
 
 button:focus {
@@ -129,13 +124,12 @@ button:focus {
 }
 
 button#menu-toggle span {
-  font-size: 1.75rem;
-  position: relative;
-  top: -1px;
+  font-size: 1.85rem;
   margin-left: 45px;
   margin-right: 15px;
   color: #fff;
   box-sizing: content-box;
+  line-height: 16px;
 }
 
 #menu-toggle {
@@ -148,7 +142,7 @@ button#menu-toggle span {
     -webkit-border-radius: 7px;
        -moz-border-radius: 7px;
             border-radius: 7px;
-    background: rgba(47,49,54,.5);
+    background: rgba(0,0,0,.6);
 }
 #menu-toggle:before,
 #menu-toggle:after {
@@ -185,7 +179,144 @@ body.open button#menu-toggle:after {
 }
 
 
-/* CLIENT PATH */
+
+
+
+
+/********* HERO CELL *********/
+.hero_cell {
+  height: 600px;
+  width: 100%;
+
+  text-align: center;
+}
+
+.hero_content {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero_content h1 {
+  text-align: center;
+}
+
+.hero_cell .scroll_cell {
+  width: max-content;
+  margin: 30px auto 0;
+}
+
+.hero_cell img {
+  margin-top: 30px;
+}
+
+.hero_cell a {
+  display: block;
+  padding-top: 5px;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.hero_cell a img.scrolldown {
+  height: 25px;
+  color: #ffffff;
+  text-align: center;
+  margin: 130px 0 30px;
+}
+
+.hero_cell {
+  background-image: url(../assets/images/trianglify.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.hero_cell::before {
+   content: "";
+  background: linear-gradient(315deg, #2f3136, #000000, #5d657a, #3a518f);
+  background-size: 600% 600%;
+  height: 600px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite;
+ }
+
+ @-webkit-keyframes AnimationName {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
+ @-moz-keyframes AnimationName {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
+ @keyframes AnimationName {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
+
+ .animated {
+   /* animation-duration: 1s; */
+   animation: 1.5s 2;
+   animation-timing-function: ease-out;
+ }
+
+ .animated.infinite {
+   animation-iteration-count: infinite;
+ }
+
+ .bounce {
+   animation-name: bounce;
+   transform-origin: center bottom;
+ }
+
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+
+
+
+
+
+
+
+
+/********* CLIENT PATH *********/
 section#clientpath {
   width: 100%;
   background-color: #5d657a;
@@ -213,12 +344,11 @@ section#clientpath .clientpath_button a {
 
 
 
-/* FOOTER */
+/********* FOOTER *********/
 footer {
   width: 100%;
-  background-color: #5d657a;
+  background-color: #555860;
   text-align: center;
-  margin-top: 30px;
 }
 
 footer h6 {

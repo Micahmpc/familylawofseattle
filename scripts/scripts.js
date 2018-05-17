@@ -41,7 +41,7 @@ document.addEventListener('readystatechange', function() {
 
 // SCROLL
 $(function() {
-  $('a[href]').on('click', function(e) {
+  $('a[href=a]').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
