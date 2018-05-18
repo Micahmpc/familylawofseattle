@@ -1,4 +1,8 @@
-
+/********* NORMALIZE *********/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  border: 0;
+}
 
 /********* GLOBAL *********/
 
@@ -7,7 +11,7 @@ body {
   padding: 0;
   border: 0;
   background: #ffffff;
-  color: #000000;
+  color: #555860;
   font-family: 'Tajawal', sans-serif;
   width: 100%;
 }
@@ -28,14 +32,47 @@ h1 {
 
 h2 {
     margin-top: 30px;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
+h3 {
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+  line-height: 2.175rem;
+  color: #555860;
+}
+
+h4.sect-title {
+  margin-bottom: 30px;
+}
+
+h5 {
+  font-size: 1.275rem;
+  margin: 0;
+}
+
 p {
-    line-height: 1.7;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #555860;
+  margin-bottom: 1.125rem;
+  font-weight: 500;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
 
 a {
@@ -50,15 +87,30 @@ a {
   padding: 10px 50px;
   color: #fff;
   text-decoration: none;
+  display: inline-block;
+  font-size: 1.125rem;
+}
+
+a:hover {
+  transition: .125s ease-in-out;
+}
+
+hr {
+  height: 1px;
+  width: 65%;
+  background: #c0c4da;
+  border: 0;
+  margin: 0
+  padding: 0;
 }
 
 
 /********* GLOBAL MODIFIERS *********/
-.center { text-align: center; }
+.center { text-align: center !important; }
 
+.block {display: block !important;}
 
-
-
+.contentstart {border-top: 0 !important; padding-top: 0 !important;}
 
 /********* PUSH MENU *********/
 #menu {
@@ -104,7 +156,8 @@ a {
     padding-top: 30px;
 }
 #menu ul li a:hover {
-    letter-spacing: 1px;
+    letter-spacing: .5px;
+    font-weight: 700;
 }
 body.open #menu {
     left: 0;
@@ -327,9 +380,10 @@ section#clientpath {
 
 section#clientpath h4 {
   padding-top: 30px;
-  width: 320px;
+  width: 500px;
   margin: 0 auto 20px;
   font-weight: 400;
+  color: #fff;
 }
 
 section#clientpath .clientpath_button {
@@ -338,9 +392,13 @@ section#clientpath .clientpath_button {
 
 section#clientpath .clientpath_button a {
   display: inline-block;
-
 }
 
+section#clientpath .clientpath_button a:hover {
+  display: inline-block;
+  color: #c0c4da;
+  border-color: #c0c4da;
+}
 
 
 
@@ -358,6 +416,7 @@ footer h6 {
   padding: 0 10px;
   margin: 10px 0;
   font-weight: 400;
+  font-size: .75rem;
 }
 
 footer h6:last-of-type {

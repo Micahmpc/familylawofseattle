@@ -1,4 +1,4 @@
-/* Global */
+/********** Global **********/
 
 .hero_cell {
   height: 600px;
@@ -46,16 +46,51 @@
 
 #content_cell {
   max-width: 900px;
-  margin: 70px auto 0;
+  margin: 0 auto;
+}
+
+.compartment:first-of-type {
+  margin-top: 70px;
+}
+
+.compartment {
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+
+.compartment:after {
+  position: absolute;
+  bottom: 0;
+  width: 500px;
+}
+
+.compartment .button {
+  text-align: center;
+}
+
+.compartment .button a {
+  border: 2px solid #3a518f;
+  color: #3a518f;
+  margin: 50px auto 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.compartment .button a:hover {
+  border: 2px solid #c0c4da;
+  color: #c0c4da;
+  transition: .15s ease-in-out;
 }
 
 
 
-/********* SLIDER CELL *********/
+/********* JS SLIDER *********/
 
 .vslider {
   position: relative;
   overflow: hidden;
+  height: 230px;
 }
 
 .vslider > * {
@@ -185,7 +220,62 @@
   content: '>';
 }
 
+/********** INDEX **********/
 
+.feature_pop {
+  display: flex;
+  justify-content: space-between;
+}
 
+figure.feature {
+  width: 260px;
+  margin: 0;
+  box-shadow: 2px 3px 5px rgba(0,0,0,.125);
+  padding-bottom: 15px;
+}
 
-/* Index */
+figure.feature div {
+  display: flex;
+  align-items: flex-end;
+  height: 225px;
+  background-size: cover;
+}
+
+figure.feature h3,figure.feature h6, figure.feature a {
+  color: #fff;
+  padding: 15px;
+}
+
+figure.feature h3 {
+  font-weight: 500;
+}
+
+figure.feature h6 {
+  color: #555860;
+  padding: 15px;
+  font-weight: 500;
+}
+
+figure.feature a {
+  color: #3a518f;
+  font-weight: 500;
+}
+
+figure.feature a:hover {
+  color: #c0c4da;
+}
+
+#feature1 {
+  background-image: url(../assets/images/lawyer_bg_placeholder.jpg);
+
+}
+
+#feature2 {
+  background-image: url(../assets/images/lawyer_bg_placeholder2.jpg);
+}
+
+#feature3 {
+  background-image: url(../assets/images/lawyer_bg_placeholder_3.jpg);
+}
+
+{}
