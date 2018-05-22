@@ -8,6 +8,11 @@ h1, h2, h3, h4, h5, h6, p {
   outline: none;
 }
 
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
 /********* GLOBAL *********/
 
 body {
@@ -115,6 +120,10 @@ hr {
 .block {display: block !important;}
 
 .contentstart {border-top: 0 !important; padding-top: 0 !important;}
+
+.highlight {
+  font-weight: 700;
+}
 
 /********* PUSH MENU *********/
 #menu {
@@ -244,7 +253,7 @@ body.open button#menu-toggle:after {
 .hero_cell {
   height: 600px;
   width: 100%;
-
+  color: #fff;
   text-align: center;
 }
 
@@ -259,6 +268,12 @@ body.open button#menu-toggle:after {
 
 .hero_content h1 {
   text-align: center;
+}
+
+.hero_content h3 {
+  font-weight: 500;
+  padding-top: 10px;
+  color: #c0c4da;
 }
 
 .hero_cell .scroll_cell {
@@ -384,7 +399,7 @@ section#clientpath {
 
 section#clientpath h4 {
   padding-top: 30px;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto 20px;
   font-weight: 400;
   color: #fff;
@@ -425,4 +440,43 @@ footer h6 {
 
 footer h6:last-of-type {
   border-right: none;
+}
+
+
+
+/********** RESPONSIVE **********/
+@media screen and (max-width: 768px) {
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.65rem;
+}
+
+#menu {
+  background-color: rgba(0,0,0,.9);
+}
+
+.container section {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+#clientpath h4 {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+footer {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+footer h6 {
+  border: none;
+}
+
 }

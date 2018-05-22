@@ -334,7 +334,7 @@ $(function() {
       $slider.setAttribute('tabindex', '0')
       $slider.setAttribute('aria-label', settings.i18n.title)
       $slider.setAttribute('aria-live', 'polite')
-      $slider.style.height = settings.height || getComputedStyle($slider).height
+      // $slider.style.height = settings.height || getComputedStyle($slider).height
       ;
       [].forEach.call(this._$slides, function ($slide, i) {
         $slide.setAttribute('id', settings.prefix + 'tabpanel$' + i)
@@ -507,3 +507,21 @@ vanillaSlider(
     after: function (index, length) {}
   }
 )
+
+
+
+// COLLAPSIBLE CELL
+var coll = document.getElementsByClassName("collapse");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("collapse_active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}

@@ -49,12 +49,12 @@
   margin: 0 auto;
 }
 
-.compartment:first-of-type {
-  margin-top: 70px;
+.compartment:last-of-type {
+  padding-bottom: 0;
 }
 
 .compartment {
-  margin-top: 70px;
+  padding-top: 70px;
   padding-bottom: 70px;
 }
 
@@ -89,7 +89,8 @@
 .vslider {
   position: relative;
   overflow: hidden;
-  height: 230px;
+  height: auto;
+  padding-bottom: 70px;
 }
 
 .vslider > * {
@@ -316,4 +317,118 @@ figure.feature a:hover {
   background-image: url(../assets/images/lawyer_bg_placeholder_3.jpg);
 }
 
-{}
+
+/********** WHO WE ARE **********/
+img.profile_pic {
+  width: 100%;
+  max-width: 450px;
+  float: left;
+  margin-right: 70px;
+  margin-bottom: 40px;
+}
+
+/* .compartment ul li:before {
+  list-style-type: square;
+} */
+
+.compartment ul li:first-child {
+  margin-top: 30px;
+}
+
+.compartment ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+    padding: 0 30px;
+}
+
+.compartment ul h5 {
+  font-size: 1.35rem;
+  max-width: 80%;
+}
+
+.compartment ul p {
+  color: #3a518f;
+  font-weight: 700;
+}
+
+#whatwedo ul li {
+  display: block;
+}
+
+#whatwedo ul li h5 {
+  width: 100%;
+  max-width: 100%;
+}
+
+#whatwedo .compartment ul li .collapse:after {
+  content: '\002B';
+  color: #3a518f;
+  float: right;
+  max-height: auto;
+}
+
+#whatwedo .compartment ul li .collapse_active:after {
+  content: "\2212";;
+  color: #3a518f;
+  float: right;
+  max-height: auto;
+}
+
+.collapse_active:after {
+    content: "\2212";
+    color: #3a518f;
+    float: right;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.compartment ul .content p {
+    padding: 15px 0;
+    color: #555860 !important;
+    font-weight: 400;
+}
+
+/********** RESPONSIVE **********/
+@media screen and (max-width: 768px) {
+
+.feature_pop {
+  display: block;
+}
+
+figure.feature {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+figure.feature:last-child {
+  margin-bottom: 0;
+}
+
+.vslider {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  padding-bottom: 70px;
+}
+
+.compartment ul li:first-child {
+  margin-top: 30px;
+}
+
+.compartment ul li:first-child {
+  margin-top: 30px;
+}
+
+.compartment ul li {
+  display: block;
+  text-align: left;
+  margin-top: 50px;
+  padding: 0;
+}
+
+}
