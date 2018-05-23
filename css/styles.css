@@ -13,6 +13,21 @@ ul, li {
   margin: 0;
 }
 
+table, tbody, tr, td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+
+div {
+  clear: none;
+  margin: 0;
+  padding: 0;
+  white-space: 0;
+  border: 0;
+}
+
 /********* GLOBAL *********/
 
 body {
@@ -124,6 +139,10 @@ hr {
 .highlight {
   font-weight: 700;
 }
+
+.nodesk {display: none;}
+
+.nomobile {display: block;}
 
 /********* PUSH MENU *********/
 #menu {
@@ -454,6 +473,10 @@ h1 {
 h4 {
   font-size: 1.65rem;
 }
+
+.nodesk {display: block;}
+
+.nomobile { display: none;}
 
 #menu {
   background-color: rgba(0,0,0,.9);
