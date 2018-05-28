@@ -352,11 +352,11 @@ img.profile_pic {
   font-weight: 700;
 }
 
-#whatwedo ul li {
+#whatwedo ul li, #howtoprepare ul li {
   display: block;
 }
 
-#whatwedo ul li h5 {
+#whatwedo ul li h5, #howtoprepare ul li h5 {
   width: 100%;
   max-width: 100%;
   font-weight: 500;
@@ -364,13 +364,13 @@ img.profile_pic {
 
 #whatwedo .compartment ul li .collapse:after {
   content: '\002B';
-  color: #3a518f;
+  color: #5d657a;
   float: right;
   max-height: auto;
   font-weight: 700;
 }
 
-#whatwedo .compartment ul li .collapse_active:after {
+#whatwedo .compartment ul li .collapse_active:after, {
   content: "\2212";;
   color: #3a518f;
   float: right;
@@ -379,88 +379,116 @@ img.profile_pic {
 
 #howwecanhelp .compartment ul li {
   display: block;
-  margin-top: 50px;
+  margin: 50px 20px;
   padding: 0;
+  height: 100%;
+  box-shadow: 2px 3px 5px rgba(0,0,0,.125);
+  border-radius: 7px;
 }
 
 #howwecanhelp .compartment ul li:first-of-type {
   margin-top: 0;
 }
 
-#howwecanhelp ul li {
-  height: 100%;
+#howwecanhelp .compartment ul li .icon {
+  width: 200px;
+  height: 200px;
   display: flex;
-  justify-content: space-between;
-  box-shadow: 2px 3px 5px rgba(0,0,0,.125);
-  background-color: #5d657a;
+  justify-content: center;
+  vertical-align: middle;
+  background-image: url(../assets/images/trianglify.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3a518f;
+  border-top-left-radius: 7px;
 }
 
-#howwecanhelp ul li .casestudy {
-  clear: none;
+#howwecanhelp .collapse:hover {
+  cursor: pointer;
+}
+
+#howwecanhelp .collapse .top {
+  display: flex;
+}
+
+#howwecanhelp ul h4 {
+  font-weight: 500;
+}
+
+#howwecanhelp ul h6 {
+  padding-top: 10px;
+}
+
+#howwecanhelp ul p {
+  color: #555860;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+#howwecanhelp .readmore {
+  text-align: center;
+  padding: 15px;
+  background-color: #5d657a;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+#howwecanhelp .readmore h5 {
+  color: #ffffff;
+  display: initial;
+}
+
+#howwecanhelp .collapse .summary {
+  padding: 10px 0 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#howwecanhelp ul li img {
+  max-width: 160px;
+  max-height: 150px;
+  margin: auto;
+  width: 100%;
 }
 
 #howwecanhelp ul li :after {
   display: none;
 }
 
-#howwecanhelp ul li div {
-  vertical-align: top;
+#howwecanhelp .content {
+  transition: max-height 0.5s ease-out;
+}
+
+#howwecanhelp .compartment ul .content p {
+  padding-bottom: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+#howtoprepare .compartment ul li .collapse:after {
+  content: url(../assets/icons/question-circle.svg);
+  color: #3a518f;
+  max-height: auto;
   display: inline-block;
-  box-sizing: border-box;
+  padding-left: 15px;
+  width: 10px;
+  position: relative;
+  top: -3px;
 }
 
-#howwecanhelp ul li div.collapse {
-  width: 30%;
-  float: left;
-  padding: 10px 15px;
-  box-sizing: border-box;
-  color: #c0c4da;
-  height: 262px;
+#howtoprepare .compartment ul li {
+  padding-left: 20px;
+  border-left: 3px solid #3a518f;
+  margin-left: 30px;
 }
 
-#howwecanhelp ul li div.collapse h5 {
-  margin-top: 20px;
-  max-width: 100%;
-}
-
-#howwecanhelp ul li div.collapse h5:first-of-type {
-  margin-top: 0;
-}
-
-#howwecanhelp ul li div.collapse h5:last-of-type {
-  color: #fff;
-  margin-top: 30px;
-  font-weight: 500;
-}
-
-#howwecanhelp ul li div.collapse h6 {
-  color: #fff;
-  margin-bottom: 0;
-  margin-top: 5px;
-  padding-left: 10px;
-  font-weight: 400;
-}
-
-#howwecanhelp ul li div.collapse h6::before {
-  content: '\2022';
-  color: #c0c4da;
-  padding-right: 5px;
+#howtoprepare .compartment hr {
+  margin-top: 70px; margin-bottom: 70px;
 }
 
 
-
-#howwecanhelp ul li div.content {
-  width: 70%;
-  padding-left: 30px;
-  max-height: 262px;
-  background-color: #fff;
-}
-
-.collapse_active:after {
-    content: "\2212";
-    color: #3a518f;
-    float: right;
-}
 
 .content {
     max-height: 0;
@@ -510,6 +538,47 @@ figure.feature:last-child {
   text-align: left;
   margin-top: 50px;
   padding: 0;
+}
+
+#howwecanhelp .collapse .top {
+  display: block;
+  box-sizing: border-box;
+}
+
+#howwecanhelp .compartment ul li .icon {
+  margin: 0 auto;
+  width: 100%;
+  height: 250px;
+  border-top-right-radius: 7px;
+}
+
+#howwecanhelp ul li img {
+  max-width: 230px;
+  max-height: 210px;
+}
+
+#howwecanhelp .collapse .summary {
+  padding: 20px;
+}
+
+#howwecanhelp .compartment ul .content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#howwecanhelp .compartment ul .content p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#howtoprepare .compartment ul li {
+  margin-left: 10px;
+}
+
+#howtoprepare .compartment ul li .collapse:after {
+  width: 12px;
+  position: relative;
+  top: -3px;
 }
 
 }

@@ -417,7 +417,7 @@ section#clientpath {
 }
 
 section#clientpath h4 {
-  padding-top: 30px;
+  padding-top: 50px;
   max-width: 500px;
   margin: 0 auto 20px;
   font-weight: 400;
@@ -425,7 +425,7 @@ section#clientpath h4 {
 }
 
 section#clientpath .clientpath_button {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 section#clientpath .clientpath_button a {
