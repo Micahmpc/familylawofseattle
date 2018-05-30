@@ -184,7 +184,7 @@
 }
 
 .vslider-nav {
-  display: block;
+  display: none;
   z-index: 100;
   position: absolute;
   top: 0;
