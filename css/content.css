@@ -147,7 +147,7 @@
 .vslider-status {
   display: block;
   list-style: none;
-  z-index: 110;
+  z-index: -1;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -343,7 +343,7 @@ img.profile_pic {
 }
 
 .compartment ul h5 {
-  font-size: 1.35rem;
+  font-size: 1.175rem;
   max-width: 80%;
 }
 
@@ -439,10 +439,9 @@ img.profile_pic {
 }
 
 #howwecanhelp .collapse .summary {
-  padding: 10px 0 0 60px;
+  padding: 25px 0 0 60px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 #howwecanhelp ul li img {
@@ -488,8 +487,6 @@ img.profile_pic {
   margin-top: 70px; margin-bottom: 70px;
 }
 
-
-
 .content {
     max-height: 0;
     overflow: hidden;
@@ -500,6 +497,38 @@ img.profile_pic {
     padding: 15px 0;
     color: #555860 !important;
     font-weight: 400;
+}
+
+.custom-map iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.connect img {
+  height: 19px;
+  display: inline-block;
+  margin-top: 0;
+  padding: 5px 0 0 0;
+}
+
+.connect h3 {
+  padding: 0 10px;
+  color: #c0c4da;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.connect a {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 0;
+  margin: 0 20px;
+}
+
+.connect a h3 {
+  color: #ffffff;
+  line-height: 1.75rem;
 }
 
 /********** RESPONSIVE **********/
@@ -561,6 +590,14 @@ figure.feature:last-child {
   padding: 20px;
 }
 
+#howwecanhelp ul p {
+  line-height: 1.5rem;
+}
+
+#howwecanhelp ul h6 {
+  padding-top: 20px;
+}
+
 #howwecanhelp .compartment ul .content {
   padding-left: 10px;
   padding-right: 10px;
@@ -571,14 +608,19 @@ figure.feature:last-child {
   padding-right: 30px;
 }
 
+.custom-map iframe {
+  height: 300px;
+}
+
 #howtoprepare .compartment ul li {
   margin-left: 10px;
 }
 
 #howtoprepare .compartment ul li .collapse:after {
   width: 12px;
-  position: relative;
-  top: -3px;
+  float: right;
+  padding-left: 5px;
+  line-height: 2.125rem;
 }
 
 }

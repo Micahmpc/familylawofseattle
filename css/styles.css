@@ -88,6 +88,9 @@ p {
   color: #555860;
   margin-bottom: 1.125rem;
   font-weight: 500;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  vertical-align: top;
 }
 
 p:last-child {
@@ -193,6 +196,7 @@ hr {
 }
 body.open #menu {
     left: 0;
+    z-index: 1000;
 }
 
 
@@ -202,6 +206,7 @@ button#menu-toggle {
   text-align: right;
   padding: 0;
   border: 2px solid rgba(0,0,0,0);
+  z-index: 1000;
 }
 
 button:focus {
@@ -309,6 +314,15 @@ body.open button#menu-toggle:after {
   padding-top: 5px;
   text-align: center;
   align-items: flex-end;
+}
+
+.hero_cell h3 {
+  padding-top: 0;
+  line-height: 1.75rem
+}
+
+.hero_cell h3 a {
+  padding-top: 0;
 }
 
 .hero_cell a img.scrolldown {
@@ -470,8 +484,8 @@ h1 {
   font-size: 2.5rem;
 }
 
-h4 {
-  font-size: 1.65rem;
+h3 {
+  font-size: 1.25rem;
 }
 
 .nodesk {display: block;}
@@ -489,7 +503,8 @@ h4 {
 }
 
 #clientpath h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.65rem;
   padding: 20px;
 }
 
