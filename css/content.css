@@ -83,6 +83,10 @@
   transition: .15s ease-in-out;
 }
 
+.collapse:hover {
+  cursor: pointer;
+}
+
 
 /********* JS SLIDER *********/
 
@@ -294,6 +298,7 @@ figure.feature h3,figure.feature h6, figure.feature a {
 
 figure.feature h3 {
   font-weight: 500;
+  font-size: 1.5rem;
 }
 
 figure.feature h6 {
@@ -304,7 +309,7 @@ figure.feature h6 {
 
 figure.feature a {
   color: #3a518f;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 figure.feature a:hover {
@@ -312,16 +317,16 @@ figure.feature a:hover {
 }
 
 #feature1 {
-  background-image: url(../assets/images/lawyer_bg_placeholder.jpg);
+  background-image: url(../assets/images/hp_feature_mediation.jpg);
 
 }
 
 #feature2 {
-  background-image: url(../assets/images/lawyer_bg_placeholder2.jpg);
+  background-image: url(../assets/images/hp_feature_willstrusts.jpg);
 }
 
 #feature3 {
-  background-image: url(../assets/images/lawyer_bg_placeholder_3.jpg);
+  background-image: url(../assets/images/hp_feature_familylaw.jpg);
 }
 
 
@@ -367,6 +372,7 @@ img.profile_pic {
   width: 100%;
   max-width: 100%;
   font-weight: 500;
+  padding-right: 30px;
 }
 
 #whatwedo .compartment ul li .collapse:after {
@@ -572,6 +578,11 @@ figure.feature {
   margin-bottom: 20px;
 }
 
+figure.feature h6 {
+  font-size: 1.125rem;
+  padding: 20px 15px;
+}
+
 figure.feature:last-child {
   margin-bottom: 0;
 }
@@ -633,8 +644,8 @@ figure.feature:last-child {
 }
 
 #howwecanhelp .compartment ul .content p {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .custom-map iframe {
