@@ -522,8 +522,8 @@ for (i = 0; i < coll.length; i++) {
       content.style.maxHeight = null;
       content.style.padding = "0";
     } else {
-      content.style.maxHeight = content.scrollHeight + 100 + "px";
-      content.style.padding = "15px 0 40px";
+      content.style.maxHeight = content.scrollHeight + 80 + "px";
+      content.style.padding = "15px 0 15px";
     }
   });
 }

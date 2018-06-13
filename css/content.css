@@ -147,7 +147,7 @@
 .vslider-status {
   display: block;
   list-style: none;
-  z-index: -1;
+  z-index: 20;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -169,16 +169,18 @@
   color: #c0c4da;
   background: #c0c4da;
   transition: 0.3s;
+  z-index: 20;
 }
 
 .vslider-status-item-active {
   color: #3a518f;
   background: #3a518f;
+  z-index: 20;
 }
 
 .vslider-status-item:hover,
 .vslider-status-item:focus,
-.vslider-status-item[aria-selected='true'], {
+.vslider-status-item[aria-selected='true'] {
   color: #3a518f;
   background: #3a518f;
 }
@@ -257,6 +259,11 @@
 
 .vslider p, .vslider h6  {
   padding: 0 30px;
+}
+
+.vslider h6 {
+  padding-top: 20px;
+  font-weight: 700;
 }
 
 /********** INDEX **********/
@@ -364,14 +371,14 @@ img.profile_pic {
 
 #whatwedo .compartment ul li .collapse:after {
   content: '\002B';
-  color: #5d657a;
+  color: #3a518f;
   float: right;
   max-height: auto;
   font-weight: 700;
 }
 
-#whatwedo .compartment ul li .collapse_active:after, {
-  content: "\2212";;
+#whatwedo .compartment ul li .collapse_active:after {
+  content: "\2212";
   color: #3a518f;
   float: right;
   max-height: auto;
@@ -422,7 +429,7 @@ img.profile_pic {
 #howwecanhelp ul p {
   color: #555860;
   font-weight: 400;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 #howwecanhelp .readmore {
@@ -439,7 +446,7 @@ img.profile_pic {
 }
 
 #howwecanhelp .collapse .summary {
-  padding: 25px 0 0 60px;
+  padding: 12px 0 0 60px;
   display: flex;
   flex-direction: column;
 }
@@ -463,6 +470,10 @@ img.profile_pic {
   padding-bottom: 0;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+#howwecanhelp .compartment ul .content p:last-child {
+  padding-bottom: 20px;
 }
 
 
@@ -497,6 +508,7 @@ img.profile_pic {
     padding: 15px 0;
     color: #555860 !important;
     font-weight: 400;
+    margin-bottom: 0 !important;
 }
 
 .custom-map iframe {
@@ -522,13 +534,30 @@ img.profile_pic {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  padding-top: 0;
+  padding-top: 5px;
   margin: 0 20px;
 }
 
 .connect a h3 {
   color: #ffffff;
   line-height: 1.75rem;
+}
+
+#booking .formFooter {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+
+#booking .supernova .form-all, .form-all {
+  background-color: none;
+  border: none;
+  box-shadow: none !important;
+}
+
+#booking .jotform-form {
+  padding: 0 !important;
+}
 }
 
 /********** RESPONSIVE **********/

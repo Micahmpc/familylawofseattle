@@ -86,7 +86,7 @@ p {
   font-size: 1.125rem;
   line-height: 1.7;
   color: #555860;
-  margin-bottom: 1.125rem;
+  margin-bottom: 1.125rem !important;
   font-weight: 500;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
