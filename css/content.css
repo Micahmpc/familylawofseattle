@@ -484,6 +484,11 @@ img.profile_pic {
   padding-bottom: 20px;
 }
 
+#howwecanhelp .compartment h6.disclaimer {
+  text-align: center;
+  font-weight: 400;
+}
+
 
 #howtoprepare .compartment ul li .collapse:after {
   content: url(../assets/icons/question-circle.svg);
