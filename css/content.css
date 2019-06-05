@@ -1,7 +1,7 @@
 /********** Global **********/
 
 .hero_cell {
-  height: 600px;
+  height: 500px;
   width: 100%;
 
   text-align: center;
@@ -10,7 +10,7 @@
 .hero_content {
   max-width: 900px;
   margin: 0 auto;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -442,7 +442,7 @@ img.profile_pic {
 
 #howwecanhelp .readmore {
   text-align: center;
-  padding: 15px;
+  padding: 5px 15px;
   background-color: #5d657a;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
